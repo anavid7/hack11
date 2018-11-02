@@ -1,3 +1,11 @@
+/**
+* Author(s): David Ryan, Collin Sipple, Victor Nguyen
+* Date Created: 11/1/2018
+* Date Modified: 11/1/2018
+* Class: CSCE155e
+* Professor: Dr. Chris Bourke
+* NUID: 47810715
+*/
 
 typedef struct {
   char* gpsId;
