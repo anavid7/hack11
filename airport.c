@@ -86,7 +86,7 @@ char* airportToString(const Airport* a) {
           strlen(a->city) + strlen(a->countryAbbrv) + sizeof(double) +
           sizeof(double) + sizeof(int);
 
-  char* buff = (char*)malloc(sizeof(char) * (n + 300));
+  char* buff = (char*)malloc(sizeof(char) * (n + 200));
 
   sprintf(buff, "GPSID:      %s\nSize:       %s\nName:       %s\nLatitude-   %f\nLongitude-  %f\nElevation-  %dft\nCity:       %s\nCountry:    %s\n",
           a->gpsId, a->type, a->name,
@@ -137,5 +137,5 @@ double getEstimatedTravelTime(const Airport* stops,
     i++;
   }
 
-  return ((totaldistince / aveKmsPerHour) + (aveLayoverTimeHrs * (size - 1)));
+  return ((totaldistince / aveKmsPerHour) + (aveLayoverTimeHrs * (size - 2)));
 }
